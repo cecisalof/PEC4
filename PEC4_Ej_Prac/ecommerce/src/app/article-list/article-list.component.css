@@ -1,0 +1,16 @@
+.article-list-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .article-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    overflow-x: auto;
+  }

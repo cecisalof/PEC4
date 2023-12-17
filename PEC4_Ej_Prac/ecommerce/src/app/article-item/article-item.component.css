@@ -1,0 +1,40 @@
+.article-item {
+    width: auto;
+    height: 80vh; 
+  }
+  
+  .article-item img {
+    width: 200px;
+    height: 400px; 
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 6px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .price {
+    margin: 8px 0;
+    font-size: 20px; 
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .on-sale {
+    background-color: #efe297;
+  }
+  
+  .not-available {
+    opacity: 0.7;
+  }
+  
+  .not-available-price {
+    color: #999;
+  }
+  
+  
