@@ -112,7 +112,26 @@ export class AppComponent {
 }
 ```
 
-3. (0.25 puntos) ¿Es posible poder inyectar el template y los estilos en línea de un componente sin necesidad de especificarlos en templateUrl, styleUrls? ¿Es recomendable hacer esto?
+3. (0.25 puntos) ¿Es posible poder inyectar el template y los estilos en línea de un componente sin necesidad de especificarlos en templateUrl, styleUrls? 
+
+Sí, en Angular es posible inyectar el template y los estilos directamente en línea dentro del código del componente, sin necesidad de especificarlos en `templateUrl` y `styleUrls`. Esto se conoce como "template y estilos en línea" y se puede lograr utilizando las propiedades `template` y `styles` directamente en el decorador `@Component`.
+
+**Ejemplo**
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: '<p>Este es el contenido del componente en línea.</p>',
+  styles: ['p { color: blue; }']
+})
+export class AppComponent {
+  // Propiedades y lógica del componente
+}
+```
+En este ejemplo, el contenido del componente y los estilos se definen directamente en el código del componente, sin necesidad de archivos externos.
+
+¿Es recomendable hacer esto?
 
 La elección de incluir el template y los estilos en línea o en archivos separados depende de varios factores y consideraciones:
 
