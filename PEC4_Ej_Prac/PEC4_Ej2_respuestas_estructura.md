@@ -112,6 +112,16 @@ export class AppComponent {
 }
 ```
 
-3. (0.25 puntos) ¿Es posible poder inyectar el template y los estilos en línea de un
-componente sin necesidad de especificarlos en templateUrl, styleUrls?
-¿Es recomendable hacer esto?
+3. (0.25 puntos) ¿Es posible poder inyectar el template y los estilos en línea de un componente sin necesidad de especificarlos en templateUrl, styleUrls? ¿Es recomendable hacer esto?
+
+La elección de incluir el template y los estilos en línea o en archivos separados depende de varios factores y consideraciones:
+
+1. **Legibilidad y Mantenibilidad:** Utilizar archivos externos (`templateUrl` y `styleUrls`) puede hacer que el código del componente sea más legible y fácil de mantener, especialmente en aplicaciones más grandes.
+
+2. **Reutilización:** Si tienes la intención de reutilizar el template o los estilos en múltiples componentes, puede ser más práctico tenerlos en archivos externos.
+
+3. **Desarrollo Rápido:** Para componentes pequeños o casos en los que la lógica es muy específica y no se espera que se reutilice, la inclusión directa en línea puede ser más rápida y conveniente.
+
+4. **Preprocesadores:** Si estás utilizando preprocesadores como SASS o LESS, es posible que prefieras tener tus estilos en archivos externos para aprovechar sus características.
+
+En resumen, la elección entre incluir el template y los estilos en línea o en archivos externos depende de los requisitos y preferencias específicos del proyecto. En general, se recomienda utilizar archivos externos para facilitar la legibilidad y el mantenimiento, especialmente en proyectos más grandes o colaborativos.
