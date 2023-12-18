@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ArticleItemModule } from './article-item/article-item.module';
 import { ArticleListModule } from './article-list/article-list.module';
+
 @Component({
   selector: 'app-root',
   standalone: true,
